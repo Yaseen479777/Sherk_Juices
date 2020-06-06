@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<link href="CSS/main css.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Contact Us</title>
+</head>
+
+<body>
+<section class="container">
+<section class="header">
+	<a href="Home.html"><img src="logo/logo.jpg" class="logo"></a>
+	<br>
+	<br>
+	
+	<br>
+	<ul class="headermenu">
+	<b><li class="headermenu3"><a href="contact us.html" class="frch">Contact Us</a></li></b>
+	<b><li class="headermenu3"><a href="Aboutus.html" class="cth">About Us</a></li></b>
+	<a href="location info.html"><b><li class="headermenu1" >Store Finnder</li></b></a>
+		<b><li class="headermenu2"><a class="frch" href="Franchising.html">Franchise Info</a></li></b>
+		<b><li class="headermenu3"><a href="caterng.html" class="cth">Catering</a></li></b>
+		<b><li class="headermenu4">Menu
+						<ul class="list">
+							<li class="listdown"><a href="Shrek Menu.html">Menu</a></li>
+								<ul class="listdown1">
+	        					<a href="smoothies.html" class="ld1"><li>smoothie</li></a>
+								<a href="Fruit juice.html" class="ld1"><li>Fruit Juices</li></a>
+								<a href="Vegetable juice.html" class="ld1"><li>Vegitable Juices</li></a>
+								<a href="Chocolate shake.html" class="ld1"><li>Chocolate Juices</li></a>
+								<a href="Mocktail.html" class="ld1"><li>Mock Tales</li></a>
+								<a href="protein shake.html" class="ld1"><li>Protien Shakes</li></a>
+								<li class="list_1"><a href="Menu Winter.html">Winter Menu</a>
+								<ul class="list_2">
+								<li class="list_w"><a href="coffe.html" class="ld2">Cafe Coffee</a></li> 
+								<li class="list_w"><a href="expresso.html" class="ld2">Cafe Espresso</a></li> 
+								<li class="list_w"><a href="caffe latte.html" class="ld2">Cafe latte</a></li> 
+								<li class="list_w"><a href="mocha.html" class="ld2"> mocha</a></li> 
+									</ul></li>
+			</ul>
+						</ul>
+		</li></b>
+		<b><li class="headermenu3"><a href="Home.html" class="frch">Home</a></li></b>
+	</ul> 
+</section>
+<section class="fbcontent">
+<br>
+<br>
+<section class="contact">
+<br>
+	<h1 class="intro2">CONTACT</h1>
+	<h3 class="intro">We'd love to help!</h3>
+	<p class="text4">We like to create things with fun, open-minded people.Feel free to say hello!</p>
+	<br>
+	<br>
+	<form>
+		Name:
+		<br>
+		<br>
+		<input type="text" id="name" class="form" placeholder="Enter Your Name">
+		<br>
+		<br>
+	Phone:
+	<br>
+		<br>
+		<input type="number" id="phone" class="form" placeholder="Enter Your Number">
+		<br>
+		<br>
+		Email:
+		<br>
+		<br>
+		<input type="email" id="email" class="form" placeholder="Enter Your Email">
+		<br>
+		<br>
+		Message:
+		<br>
+		<br>
+		<textarea placeholder="Enter Your Message" id="message" class="form" rows="5"></textarea>
+		<br>
+		<br>
+		<input type="submit" class="button3" onClick="validation()">
+	</form>
+</section>
+</section>
+
+<section class="footer" >
+	<section class="imgbar4">
+	<ul class="menuproducts">
+		<h2><li>Menu & Products</li></h2>
+		
+		<a href="Fruit juice.html" class="fotrlnk"><li>Fruit juices</li></a>
+		<a href="Vegetable juice.html" class="fotrlnk"><li>Vegetable Juices</li></a>
+		<a href="smoothies.html" class="fotrlnk"><li>Smoothies</li></a>
+		<a href="protein shake.html" class="fotrlnk"><li>Protein Shakes</li></a>
+		<a href="Menu Winter.html" class="fotrlnk"><li>Winter Menu</li></a>
+		<a href="Chocolate shake.html" class="fotrlnk"><li>Chocolate Juices</li></a>
+		<a href="Mocktail.html" class="fotrlnk"><li>Mocktails</li></a>
+	</ul>
+	<ul class="companyinfo">
+		<h2><li>Company Info</li></h2>
+		<a href="contact us.html" class="fotrlnk"><li>Contact us</li></a>
+		<a href="Aboutus.html" class="fotrlnk"><li>About US</li></a>
+		<a href="Feedback.html" class="fotrlnk"><li>Feedback</li></a>
+		<a href="Franchising.html" class="fotrlnk"><li>Franchising</li></a>
+	</ul>
+	
+	<ul class="companyinfo">
+		<h2><li>Contact With Shrek</li></h2>
+		<a href="location info.html" class="fotrlnk"><li><img src="socail media icons/location.png"> Find a store</li></a>
+		
+	</ul>
+
+</section>
+</section>
+</section>
+
+
+</body>
+</html>
+<script>
+function validation()
+{
+	var uname = document.getElementById('name').value;
+	var uemail = document.getElementById('email').value;
+	var umessage = document.getElementById('message').value;
+	var regname = /^[a-zA-z]{3,30}$/;
+	var regemail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	
+	if(uname == "")
+		{
+			alert("Please Enter Your Name");
+		}
+	else if(regname.test(uname) == false)
+		{
+			alert("Please Enter Correct Name");
+		}
+	
+	else if(uemail == "")
+		{
+			alert("Please Enter Your Email");
+		}
+	else if(regemail.test(uemail) == false)
+		{
+			alert("Please Enter Correct Email Address");
+		}
+	else if(umessage == "")
+		{
+			alert("Please Enter Your Message");
+		}
+}
+
+
+</script>
